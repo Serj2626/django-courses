@@ -5,5 +5,4 @@ from .models import Course
 
 def index(request):
     courses = Course.objects.all()
-    res = [str(course) + '<br>' for course in courses]
-    return HttpResponse(res)
+    return render(request, 'courses.html', {'courses': courses})
