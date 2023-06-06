@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'shop.apps.ShopConfig',
     'api.apps.ApiConfig',
+    'tastypie',
+
 ]
 
 MIDDLEWARE = [
